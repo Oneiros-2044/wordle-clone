@@ -1,3 +1,5 @@
+//https://github.com/techtribeyt/Wordle/blob/main/wordle_guesses.txt
+
 var possibleResults = [
 'aback',
 'abase',
