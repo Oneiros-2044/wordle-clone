@@ -1,0 +1,51 @@
+body, html {
+    background: #0c0c0c;
+    background-image: url("bg2.png");
+    background-repeat: no-repeat;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px 10px;
+    grid-template-columns: 75px 75px 75px 75px 75px;
+    grid-template-rows: 75px 75px 75px 75px 75px;
+    background-color: none;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: #0c0c0c;
+    border: 2px solid rgba(75, 75, 75, 0.8);
+    
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .form-control {
+    color:#fff;
+    background-color: rgba(39, 39, 39, 0.8);
+    border-color: rgba(82, 82, 82, 0.8);
+    margin-bottom: 5px;
+  }
+
+  .form-control:focus {
+    border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
+    outline: 0 none;
+  }
+
+
+  .btn-dark {
+    color: #fff;
+    background-color: rgba(39, 39, 39, 0.8);
+    border-color: rgba(27, 27, 27, 0.8);
+  }
+
+  .btn-dark:hover {
+    color: #fff;
+    background-color: rgba(24, 24, 24, 0.8);
+    border-color: rgba(27, 27, 27, 0.8);
+  }

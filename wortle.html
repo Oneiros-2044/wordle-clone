@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+        <title>Wordle Clone</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet"> 
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css'>
+        <!-- jQuery library -->
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+        <!-- Latest compiled JavaScript -->
+        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js'></script>
+
+        <link rel='stylesheet' href='style.css'>
+        <link rel="icon" href="favicon.png" type="image/png">
+    </head> 
+        
+    <body>
+
+        <!-- Modal -->
+        <div class="modal fade" id="resultsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content" style="color:white;background-color:rgba(75, 75, 75)">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" style="color:white;">&times;</span>
+                </button>
+                <div class="modal-body" style="margin-top:15px;text-align: center;">
+                <p id="modalText">result</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- <div style="margin-left:10px;margin-top:5px;border-bottom: solid black 1px; padding-left:5px;"></div> -->
+        <div class="container" id="main" style="width:470px;padding-top:50px">
+            <h1 style="text-align: center;">WORDLE</h1>
+            <div class="grid-container">
+                <div class="grid-item" id="00"></div>
+                <div class="grid-item" id="01"></div>
+                <div class="grid-item" id="02"></div>
+                <div class="grid-item" id="03"></div>
+                <div class="grid-item" id="04"></div>
+
+                <div class="grid-item" id="10"></div>
+                <div class="grid-item" id="11"></div>
+                <div class="grid-item" id="12"></div>
+                <div class="grid-item" id="13"></div>
+                <div class="grid-item" id="14"></div>
+
+                <div class="grid-item" id="20"></div>
+                <div class="grid-item" id="21"></div>
+                <div class="grid-item" id="22"></div>
+                <div class="grid-item" id="23"></div>
+                <div class="grid-item" id="24"></div>
+
+                <div class="grid-item" id="30"></div>
+                <div class="grid-item" id="31"></div>
+                <div class="grid-item" id="32"></div>
+                <div class="grid-item" id="33"></div>
+                <div class="grid-item" id="34"></div>
+
+                <div class="grid-item" id="40"></div>
+                <div class="grid-item" id="41"></div>
+                <div class="grid-item" id="42"></div>
+                <div class="grid-item" id="43"></div>
+                <div class="grid-item" id="44"></div>
+              </div> 
+
+              <form action='#'>
+                  <div class='form-group'>
+                      <input type='text' class='form-control' id='wordleInputForm' autocomplete='off' autofocus value=''>
+                      <button type='submit' class='btn btn-dark' onclick='wordleInput()' id='bttn'>Submit</button>
+                  </div>
+              </form>
+
+        </div>
+        <script src="Results.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>
